@@ -46,3 +46,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* End of CSS Reset */
+
+/* Start of Custom Styles */
+body {
+	font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    background-color: LightGray;
+}
+
+div, section {
+    border: 1px solid Chocolate;
+}
+
+/* Navigation Section */
+.top-navigation {
+	background: #ffffff;
+}
+
+.top-navigation > .content {
+    width: 970px;
+    height: 70px;
+    margin: 0 auto;
+}
