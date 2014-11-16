@@ -51,15 +51,13 @@ table {
 
 /* Start of Custom Styles */
 body {
-	font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-
     background-color: LightGray;
 }
 
+/*
 div, section {
     border: 1px solid Chocolate;
-}
+}*/
 
 /* Navigation Section */
 .top-navigation {
@@ -67,13 +65,45 @@ div, section {
 }
 
 .top-navigation > .content {
-	width: 60rem;
-    height: 4.375rem;
+	padding: 0 0.938rem;	/* 15/16*/
+	width: 60rem;			/* 970 / 16 */
+    height: 4.375rem;		/* 70/16 */
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
+	/* So padding and margins are part of the width calculation */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  	box-sizing: border-box;         /* Opera/IE 8+ */
+
 }
 
-.logo {
-	margin: 15px 0;
+.top-navigation .logo {
+	height: 4.375rem;	/* Can just set height of .svg*/
+}
+
+.top-navigation .links {
+	float: right;
+	margin-top: 1.6875rem;
+}
+
+.top-navigation .links > li {
+	display: inline-block;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 1rem; 
+	color: #838994; 
+	letter-spacing: 0.03rem;
+	margin-left: 1.5625rem;
+
+	/* make your fonts look much cleaner. */
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links > li:hover {
+	cursor: pointer;
+	color: #333333;
+}
+
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 500;
 }
