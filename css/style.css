@@ -67,7 +67,13 @@ div, section {
 }
 
 .top-navigation > .content {
-    width: 970px;
-    height: 70px;
+	width: 60rem;
+    height: 4.375rem;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+	margin: 15px 0;
 }
