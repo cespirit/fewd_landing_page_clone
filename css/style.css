@@ -72,6 +72,10 @@ div, section {
 /* Navigation Section */
 .top-navigation {
 	background: #fff;
+	border-bottom: 0.0625rem solid #DDD;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
 }
 
 .content {
@@ -109,4 +113,51 @@ div, section {
 .top-navigation .active a {
     color: #4c5058;
     font-weight: 500;
+}
+
+/* Introduction Section */
+.introduction {
+	background-image: url('../images/first-background.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;
+	background-position: center bottom;
+	height: 45.938rem;
+	overflow: auto;
+}
+
+.introduction h1, 
+.introduction h3 {
+	font-weight: 300;
+	color: white;	
+	text-align: center;
+}
+
+.introduction h1 {
+	font-size: 3.125em;
+
+	margin-top: 17.5rem;	/* Problem */
+}
+
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+
+.introduction .buttons {
+	text-align: center;
+	margin-top: 1.563rem;
+}
+
+.introduction button {
+	background-color: #f15a29;
+	padding: 1rem 1.5rem;
+	width: 9.688rem;
+	border-radius: 4px;
+	font-size: 1.125rem;	
+	border-style: none;
+	color: white;
+}
+
+.introduction button:hover {
+	background-color: #d9400e;
 }
