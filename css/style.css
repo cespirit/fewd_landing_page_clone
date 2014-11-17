@@ -52,7 +52,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* End of CSS Reset */
 
 /* Start of Custom Styles */
@@ -122,7 +121,8 @@ div, section {
   	background-size: cover;
 	background-position: center bottom;
 	height: 45.938rem;
-	overflow: auto;
+	overflow: auto;		/* Margin collapse fix */
+
 }
 
 .introduction h1, 
@@ -133,14 +133,13 @@ div, section {
 }
 
 .introduction h1 {
-	font-size: 3.125em;
-
-	margin-top: 17.5rem;	/* Problem */
+	font-size: 3.125em;		/* 50px */
+	margin-top: 17.5rem;	/* Margin collapse problem */
 }
 
 .introduction h3 {
-	margin-top: 1.25rem;
-	font-size: 1.563rem;
+	font-size: 1.563rem;	/* 25px */
+	margin-top: 1.25rem;	
 }
 
 .introduction .buttons {
@@ -148,16 +147,19 @@ div, section {
 	margin-top: 1.563rem;
 }
 
-.introduction button {
-	background-color: #f15a29;
-	padding: 1rem 1.5rem;
-	width: 9.688rem;
-	border-radius: 4px;
-	font-size: 1.125rem;	
-	border-style: none;
+.big-button {
+	background-color: #f15a29;	
+	width: 9.688rem;	
+	font-size: 1.125rem;		
 	color: white;
+	text-shadow: none;
+	border-radius: 0.25rem;
+	border-style: none;
+	padding: 1rem 1.625rem;
+	/*line-height: 1.33;*/
 }
 
 .introduction button:hover {
 	background-color: #d9400e;
+	cursor: pointer;
 }
