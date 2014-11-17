@@ -69,6 +69,13 @@ div, section {
 }*/
 
 /* Navigation Section */
+
+.content {
+	padding: 0 0.938rem;
+	width: 60rem;			/* 970 / 16 */    
+    margin: 0 auto;
+}
+
 .top-navigation {
 	background: #fff;
 	border-bottom: 0.0625rem solid #DDD;
@@ -77,11 +84,8 @@ div, section {
 	width: 100%;
 }
 
-.content {
-	padding: 0 0.938rem;
-	width: 60rem;			/* 970 / 16 */
-    height: 4.375rem;		/* 70/16 */
-    margin: 0 auto;
+.top-navigation .content {
+	height: 4.375rem;		/* 70/16 */
 }
 
 .top-navigation .logo {
@@ -121,7 +125,7 @@ div, section {
   	background-size: cover;
 	background-position: center bottom;
 	height: 45.938rem;
-	overflow: auto;		/* Margin collapse fix */
+	overflow: hidden;		/* Margin collapse fix and removes scroll bar horiz if auto*/
 
 }
 
@@ -162,4 +166,41 @@ div, section {
 .introduction button:hover {
 	background-color: #d9400e;
 	cursor: pointer;
+}
+
+.cases {
+	text-align: center;	
+	background-color: white;
+}
+
+.cases .content {
+	padding-top: 8.125rem;
+	padding-bottom: 8.125rem;
+	color: #1d1e21;
+	border-bottom: 0.0625rem solid #DDD;
+}
+
+.cases h2 {
+	font-size: 2.75rem;
+	margin-bottom: 3.125rem;
+	font-weight: 300;
+}
+
+.cases h3 {
+	font-size: 1.563rem;
+}
+
+.cases .features > li {
+	display: inline-block;
+	width: 33%;
+}
+
+.features .caption {
+	margin-top: 2.5rem;
+}
+
+
+/* Social Media Links Section */
+.social {
+	background-color: white;
 }
